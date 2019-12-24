@@ -1,0 +1,21 @@
+{
+    "name": "vscode-kalisi",
+    "displayName": "vscode-kalisi",
+    "description": "",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.37.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Kalisi",
+                "uiTheme": "vs",
+                "path": "./themes/Kalisi-color-theme.json"
+            }
+        ]
+    }
+}
