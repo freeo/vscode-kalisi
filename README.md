@@ -1,12 +1,15 @@
 # vscode-kalisi
 
+Adaption of [vim-kalisi](https://github.com/freeo/vim-kalisi) for VSCode.
+
+v0.1: light theme
+
 ### vscode builtin highlight group inspector:
 
 Command:
     Developer: Inspect TM Scopes
 Shortcut:
     CMD+OPT+SHIFT+I
-
 
 ### Debugging
 
