@@ -700,11 +700,11 @@
 
         "terminal.ansiBrightBlack":"#000000",
         "terminal.ansiBrightBlue":"#3c91e6",
-        "terminal.ansiBrightCyan":"#00aaaa",
-        "terminal.ansiBrightGreen":"#00dd00",
+        "terminal.ansiBrightCyan":"#00dd00",
+        "terminal.ansiBrightGreen":"#00aaaa",
         "terminal.ansiBrightMagenta":"#cc00cc",
         "terminal.ansiBrightRed":"#ff0000",
-        "terminal.ansiBrightWhite":"#888888",
+        "terminal.ansiBrightWhite":"#000000",
         "terminal.ansiBrightYellow":"#ee8800",
 
         "terminal.background":"#f2f2f2",
