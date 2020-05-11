@@ -1,6 +1,7 @@
 {
     "name": "Kalisi",
     "type": "light",
+    "semanticHighlighting": true,
     "tokenColors": [
         // {
         //     "settings": {
@@ -19,7 +20,10 @@
         },
         {
             "name": "String",
-            "scope": "string",
+            "scope": [
+                "string",
+                "string.quoted.docstring",
+            ],
             "settings": {
                 "foreground": "#0060a0",
                 "fontStyle": ""
@@ -46,17 +50,29 @@
             "name": "Built-in constant",
             "scope": "constant.language",
             "settings": {
-                "foreground": "#0000af"
+                "foreground": "#3c91e6"
+                // "foreground": "#0000af"
             }
         },
         {
-            "name": "User-defined constant",
+            "name": "hmm",
             "scope": [
                 "constant.character",
-                "constant.other"
             ],
             "settings": {
-                "foreground": "#333333",
+                "foreground": "#66b600",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "hmm",
+            "scope": [
+                "constant.other",
+                "string.quoted.rune",
+            ],
+            "settings": {
+                // "foreground": "#333333",
+                "foreground": "#00a0a0",
                 "fontStyle": "bold"
             }
         },
@@ -64,10 +80,11 @@
             "name": "User-defined constant",
             "scope": [
                 "constant.character.format.placeholder",
+                "constant.other.placeholder",
             ],
             "settings": {
-                "foreground": "#ffaf00",
-                "fontStyle": "bold"
+                "foreground": "#a200ff",
+                "fontStyle": ""
             }
         },
         {
@@ -79,7 +96,6 @@
         },
         {
             "scope": [
-                "support.type",
                 "variable.language",
                 "variable.parameter.function"
             ],
@@ -88,6 +104,18 @@
                 "fontStyle": ""
             }
         },
+
+        {
+            "name": "jsonKey",
+            "scope": [
+                "support.type",
+            ],
+            "settings": {
+                "foreground": "#000000",
+                "fontStyle": ""
+            }
+        },
+
         {
             "name": "Keyword",
             "scope": "keyword",
@@ -99,7 +127,9 @@
             "name": "Keyword Operators",
             "scope": "keyword.operator",
             "settings": {
-                "foreground": "#0167dd",
+                // "foreground": "#0167dd",
+                "foreground": "#000000",
+                // "fontStyle": "bold"
             }
         },
         {
@@ -130,15 +160,15 @@
             "scope": "storage",
             "settings": {
                 "fontStyle": "",
-                "foreground": "#ffbf69"
+                "foreground": "#aaaaee"
             }
         },
         {
             "name": "Storage type",
             "scope": "storage.type",
             "settings": {
-                "fontStyle": "bold",
-                "foreground": "#f47300"
+                "fontStyle": "",
+                "foreground": "#ae01e2"
             }
         },
         {
@@ -163,25 +193,26 @@
         },
         {
             "name": "Inherited class",
-            "scope": "entity.other.inherited-class",
+            "scope": "entity.other",
             "settings": {
                 "fontStyle": "",
-                "foreground": "#ffbf69"
+                "foreground": "#008b00"
             }
         },
         {
             "name": "Function name",
             "scope": "entity.name.function",
             "settings": {
-                "fontStyle": "",
-                "foreground": "#3c91e6"
+                "foreground": "#3c91e6",
+                "fontStyle": "bold",
             }
         },
         {
             "name": "Function Call",
             "scope": "meta.function-call",
             "settings": {
-                "foreground": "#3c91e6"
+                // "foreground": "#3c91e6"
+                "foreground": "#000000"
             }
         },
         {
@@ -192,18 +223,12 @@
             }
         },
         {
-            "name": "Function Call Builtin",
-            "scope": "support.function.builtin",
-            "settings": {
-                "foreground": "#202090"
-            }
-        },
-        {
             "name": "Library function",
             "scope": "support.function",
             "settings": {
                 "fontStyle": "",
-                "foreground": "#202090"
+                // "foreground": "#3c91e6"
+                "foreground": "#000000"
             }
         },
         {
@@ -265,6 +290,14 @@
             }
         },
         {
+            "name": "Invalid illegal",
+            "scope": "invalid.illegal",
+            "settings": {
+                "foreground": "#ff0000",
+                "fontStyle": ""
+            }
+        },
+        {
             "name": "Invalid deprecated",
             "scope": "invalid.deprecated",
             "settings": {
@@ -274,9 +307,9 @@
         },
         {
             "name": "JSON String",
-            "scope": "meta.structure.dictionary.json string.quoted.double.json",
+            "scope": "string.quoted.double.json",
             "settings": {
-                "foreground": "#66b600"
+                "foreground": "#1daf00"
             }
         },
         {
@@ -339,18 +372,6 @@
             }
         },
         {
-            "scope": "meta.structure.dictionary.json string.quoted.double.json",
-            "settings": {
-                "foreground": "#ffbf69"
-            }
-        },
-        {
-            "scope": "meta.structure.dictionary.value.json string.quoted.double.json",
-            "settings": {
-                "foreground": "#9fd356"
-            }
-        },
-        {
             "name": "Function argument",
             "scope": "meta.property-name support.type.property-name",
             "settings": {
@@ -401,7 +422,10 @@
         },
         {
             "name": "Golang variables",
-            "scope": "variable.other.assignment",
+            "scope": [
+                "variable.other.assignment",
+                "variable.other.declaration",
+            ],
             "settings": {
                 "foreground": "#000000",
                 "fontStyle": ""
@@ -558,6 +582,20 @@
     ],
 
     "colors": {
+
+        "debugView.exceptionLabelForeground": "#ff00FF",
+        "debugView.exceptionLabelBackground": "#555555",
+        "debugView.stateLabelForeground": "#ff0000",
+        "debugView.stateLabelBackground": "#ffaa00",
+        "debugView.valueChangedHighlight": "#66d600",
+
+        "debugTokenExpression.name": "#00bd10",
+        "debugTokenExpression.value": "#000000", // "Debug Console" regular foreground text
+        "debugTokenExpression.string": "#0167dd",
+        "debugTokenExpression.boolean": "#0167dd",
+        "debugTokenExpression.number": "#0167dd",
+        "debugTokenExpression.error": "#c90000",
+
         "activityBar.background":"#888888",
         "activityBar.foreground":"#eeeeee",
         "activityBarBadge.background":"#a7da1e",
@@ -569,8 +607,8 @@
         "dropdown.background":"#fafafa",
         "dropdown.border":"#fafafa",
         "dropdown.foreground":"#444444",
-        // "editor.background": "#f5f7f5",
-        "editor.background": "#f7f7f7",
+        // "editor.background": "#f7f7f7",
+        "editor.background": "#fafafa", // 20200510 increase brightness
         "editor.findMatchBackground": "#b8ea00",
 
         "settings.modifiedItemIndicator": "#FF00FF",
@@ -645,8 +683,9 @@
         "list.errorForeground": "#FF0000",
         "list.warningForeground": "#FFa000",
         // "panel.background":"#888888",
-        "panel.background":"#eeeeee",
-        "panel.border":"#555555",
+        // "panel.background":"#eeeeee",
+        "panel.background":"#f7f7f7",
+        "panel.border":"#aaaaaa",
         "panelTitle.activeBorder":"#a7da1e",
         "panelTitle.activeForeground":"#000000",
         "panelTitle.inactiveForeground":"#888888",
