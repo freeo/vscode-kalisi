@@ -730,11 +730,11 @@
 
         "terminal.ansiBlack":"#000000",
         "terminal.ansiBlue":"#3c91e6",
-        "terminal.ansiCyan":"#00dddd",
+        "terminal.ansiCyan":"#66d600",
         "terminal.ansiGreen":"#00dd00",
         "terminal.ansiMagenta":"#dd00dd",
         "terminal.ansiRed":"#ff0000",
-        "terminal.ansiWhite":"#ffffff",
+        "terminal.ansiWhite":"#888888",
         "terminal.ansiYellow":"#eeee44",
 
         "terminal.ansiBrightBlack":"#000000",
