@@ -106,12 +106,15 @@
         },
 
         {
-            "name": "jsonKey",
+            // Typescript Types
+            // JSON Key
+            "name": "Types",
             "scope": [
                 "support.type",
             ],
             "settings": {
-                "foreground": "#000000",
+                // "foreground": "#000000",
+                "foreground": "#ae01e2",
                 "fontStyle": ""
             }
         },
@@ -232,52 +235,64 @@
             }
         },
         {
+            // Typescript inline parameters
             "name": "Function argument",
             "scope": "variable.parameter",
             "settings": {
                 "fontStyle": "",
-                "foreground": "#9495aa"
+                // "foreground": "#9495aa"
+                "foreground": "#229000"
             }
         },
         {
+            // HTML tags
             "name": "Tag name",
             "scope": "entity.name.tag",
             "settings": {
                 "fontStyle": "",
-                "foreground": "#fa824c"
+                // "foreground": "#fa824c"
+                "foreground": "#1177dd"
             }
         },
         {
+            // HTML attribue
             "name": "Tag attribute",
             "scope": "entity.other.attribute-name",
             "settings": {
-                "fontStyle": "",
-                "foreground": "#ffbf69"
+                "fontStyle": "bold",
+                // "foreground": "#ffbf69"
+                "foreground": "#000"
             }
         },
         {
+            // CSS constant
             "name": "Library constant",
             "scope": "support.constant",
             "settings": {
-                "fontStyle": "",
-                "foreground": "#ffbf69"
+                "fontStyle": "bold",
+                // "foreground": "#ffbf69"
+                "foreground": "#0070c0"
             }
         },
         {
+            // Typescript class
             "name": "Library class/type",
             "scope": [
                 "support.class"
             ],
             "settings": {
-                "fontStyle": "",
-                "foreground": "#ffbf69"
+                "fontStyle": "bold",
+                // "foreground": "#ffbf69"
+                "foreground": "#ae01e2"
             }
         },
         {
+            // Typescript console.
             "name": "Library variable",
             "scope": "support.other.variable",
             "settings": {
-                "fontStyle": ""
+                "fontStyle": "",
+                "foreground": "#66b600"
             }
         },
         {
@@ -368,7 +383,8 @@
                 "constant.other.color"
             ],
             "settings": {
-                "foreground": "#9fd356"
+                // "foreground": "#9fd356"
+                "foreground": "#0070c0"
             }
         },
         {
@@ -416,7 +432,7 @@
             "name": "Function argument",
             "scope": "variable.other",
             "settings": {
-                "foreground": "#ee8800",
+                "foreground": "#000000",
                 "fontStyle": ""
             }
         },
@@ -549,10 +565,12 @@
             }
         },
         {
+            // Typescript inline `${}`
             "name": "Template expressions.",
             "scope": "meta.template.expression",
             "settings": {
-                "foreground": "#444444"
+                // "foreground": "#444444"
+                "foreground": "#cc2200",
             }
         },
         {
