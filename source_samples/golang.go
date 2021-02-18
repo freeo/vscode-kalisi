@@ -10,7 +10,8 @@ import (
 
 func echoHandler(ws *websocket.Conn) {
 	msg := make([]byte, 512)
-	msg := []string
+	msg2 := []string{"durr","test"}
+	fmt.Println(msg2)
 	n, err := ws.Read(msg)
 	if err != nil {
 		log.Fatal(err)

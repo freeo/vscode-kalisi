@@ -107,7 +107,6 @@
 
         {
             // Typescript Types
-            // JSON Key
             "name": "Types",
             "scope": [
                 "support.type",
@@ -119,6 +118,18 @@
             }
         },
 
+        {
+            // JSON Key
+            "name": "Types",
+            "scope": [
+                "support.type.property-name.json",
+            ],
+            "settings": {
+                // "foreground": "#000000",
+                "foreground": "#000",
+                "fontStyle": ""
+            }
+        },
         {
             "name": "Keyword",
             "scope": "keyword",
@@ -163,7 +174,8 @@
             "scope": "storage",
             "settings": {
                 "fontStyle": "",
-                "foreground": "#aaaaee"
+                // "foreground": "#aaaaee"
+                "foreground": "#66b600"
             }
         },
         {
