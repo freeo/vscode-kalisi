@@ -9,6 +9,8 @@ Long-term usability & eye-care are the two design goals of this theme.
 
 ## Buy me a beer
 
+🍻 to continue working on this.
+
 https://www.paypal.com/paypalme/hifreeo
 
 ## Screenshots
@@ -16,25 +18,25 @@ https://www.paypal.com/paypalme/hifreeo
 Font: JetBrainsMono Nerd Font Mono
 
 ### UI (note git coloring)
-![Git UI screenshot|25%,25%](https://i.imgur.com/67cplFl.png)
+<img alt="Git UI screenshot" src="https://i.imgur.com/67cplFl.png" >
 
 ### Go
-![Golang screenshot](https://i.imgur.com/Pc6PtPu.png){: height="25%"}
+<img alt="Golang screenshot" src="https://i.imgur.com/Pc6PtPu.png" height="800">
 
 ### Rust
-![Rust screenshot](https://i.imgur.com/GLLR6TC.png){: height="25%"}
+<img alt="Rust screenshot" src="https://i.imgur.com/GLLR6TC.png" height="800">
 
 ### TypeScript
-![TS screenshot](https://i.imgur.com/8yaN08n.png){: height="25%"}
+<img alt="TS screenshot" src="https://i.imgur.com/8yaN08n.png" height="650">
 
 ### Python (smaller fontsize)
-![Python screenshot](https://i.imgur.com/4ixxDPo.png){: height="25%"}
+<img alt="Python screenshot" src="https://i.imgur.com/4ixxDPo.png" height="1000">
 
 ### C++
-![C++ screenshot|25%](https://i.imgur.com/gew3x5b.png)
+<img alt="C++ screenshot" src="https://i.imgur.com/gew3x5b.png" height="700">
 
 ### Diff (Python)
-![diff screenshot|25%](https://i.imgur.com/XF4gwsS.png)
+<img alt="diff screenshot" src="https://i.imgur.com/XF4gwsS.png" >
 
 
 ## Theme Development Notes
@@ -43,6 +45,7 @@ Font: JetBrainsMono Nerd Font Mono
 
 Command:
     Developer: Inspect TM Scopes
+
 Shortcut:
     CMD+OPT+SHIFT+I
 
