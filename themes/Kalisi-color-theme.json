@@ -3,14 +3,6 @@
     "type": "light",
     "semanticHighlighting": true,
     "tokenColors": [
-        // {
-        //     "settings": {
-        //         "foreground": "#000000",
-        //         "background": "#888888",
-        //         // "selectionForeground": "#ffffff",
-
-        //     }
-        // },
         {
             "name": "Comment",
             "scope": "comment",
@@ -40,7 +32,7 @@
             "name": "Number Float",
             "scope": [
                 "constant.numeric.floating-point",
-                "constant.numeric.float"
+                "constant.numeric.float",
             ],
             "settings": {
                 "foreground": "#00a0a0"
@@ -48,10 +40,12 @@
         },
         {
             "name": "Built-in constant",
-            "scope": "constant.language",
+            "scope": [
+                "constant.language",
+                "meta.use.rust", // [true,false]
+            ],
             "settings": {
                 "foreground": "#3c91e6"
-                // "foreground": "#0000af"
             }
         },
         {
@@ -71,7 +65,6 @@
                 "string.quoted.rune",
             ],
             "settings": {
-                // "foreground": "#333333",
                 "foreground": "#00a0a0",
                 "fontStyle": "bold"
             }
@@ -112,7 +105,6 @@
                 "support.type",
             ],
             "settings": {
-                // "foreground": "#000000",
                 "foreground": "#ae01e2",
                 "fontStyle": ""
             }
@@ -125,25 +117,44 @@
                 "support.type.property-name.json",
             ],
             "settings": {
-                // "foreground": "#000000",
-                "foreground": "#000",
+                "foreground": "#000000",
                 "fontStyle": ""
             }
         },
         {
             "name": "Keyword",
-            "scope": "keyword",
+            "scope": [
+                "keyword",
+                "keyword.other.fn.rust",
+                "keyword.other.crate.rust"
+            ],
             "settings": {
                 "foreground": "#66b600"
+            }
+        },
+        {
+            "name": "Keyword Other Rust",
+            "scope": [
+                "keyword",
+                "keyword.other.rust"
+            ],
+            "settings": {
+                "foreground": "#8400ff"
             }
         },
         {
             "name": "Keyword Operators",
             "scope": "keyword.operator",
             "settings": {
-                // "foreground": "#0167dd",
                 "foreground": "#000000",
                 // "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "Keyword Operators",
+            "scope": "keyword.operator.borrow",
+            "settings": {
+                "foreground": "#ae01e2"
             }
         },
         {
@@ -174,7 +185,6 @@
             "scope": "storage",
             "settings": {
                 "fontStyle": "",
-                // "foreground": "#aaaaee"
                 "foreground": "#66b600"
             }
         },
@@ -196,6 +206,17 @@
             "settings": {
                 "fontStyle": "bold",
                 "foreground": "#66b600"
+            }
+        },
+        {
+            "name": "Storage type (let)",
+            "scope": [
+                "storage.type.ts",
+                "storage.type.rust"
+            ],
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#229000"
             }
         },
         {
@@ -653,6 +674,13 @@
         "editor.wordHighlightStrongBackground":"#b8ea00",
         "editorBracketMatch.background":"#ffd030",
         "editorBracketMatch.border":"#ffa020",
+        "editorBracketHighlight.foreground1": "#000000",
+        "editorBracketHighlight.foreground2": "#0050dd",
+        "editorBracketHighlight.foreground3": "#8400ff",
+        "editorBracketHighlight.foreground4": "#00976f",
+        "editorBracketHighlight.foreground5": "#ca00c6",
+        "editorBracketHighlight.foreground6": "#00d5ed",
+        "editorBracketHighlight.unexpectedBracket.foreground": "#ff0000",
         "editorCursor.background": "#ffffff",
         "editorCursor.foreground": "#ff0000",
         "editorGroupHeader.tabsBackground":"#888888",
@@ -695,11 +723,18 @@
         "extensionButton.prominentHoverBackground":"#fba57e",
         "focusBorder":"#fa824c",
         "foreground":"#000000",
-        "gitDecoration.conflictingResourceForeground":"#9d37fc",
-        "gitDecoration.deletedResourceForeground":"#e61f44",
-        "gitDecoration.ignoredResourceForeground":"#ffffff",
-        "gitDecoration.modifiedResourceForeground":"#007000",
-        "gitDecoration.untrackedResourceForeground":"#a0a0a0",
+
+        "gitDecoration.addedResourceForeground": "#3d8e00",
+        "gitDecoration.modifiedResourceForeground":"#006ed5",
+        "gitDecoration.deletedResourceForeground":"#ff4f00",
+        "gitDecoration.renamedResourceForeground": "#5f5fd7",
+        "gitDecoration.stageModifiedResourceForeground": "#3d8e00",
+        "gitDecoration.stageDeletedResourceForeground": "#808080",
+        "gitDecoration.untrackedResourceForeground":"#6600c5",
+        "gitDecoration.ignoredResourceForeground":"#b0b0b0",
+        "gitDecoration.conflictingResourceForeground":"#ff8000",
+        "gitDecoration.submoduleResourceForeground": "#3d956a",
+
         "input.background":"#f2f2f2",
         "input.border":"#888888",
         "input.foreground":"#444444",
@@ -710,10 +745,9 @@
         "list.focusBackground":"#a7da1e",
         "list.hoverBackground":"#ddeea0",
         "list.inactiveSelectionBackground":"#dddddd",
-        "list.errorForeground": "#FF0000",
-        "list.warningForeground": "#FFa000",
-        // "panel.background":"#888888",
-        // "panel.background":"#eeeeee",
+        // "list.errorForeground": "#FF0000",
+        "list.errorForeground": "#ff6000",
+        "list.warningForeground": "#009dff",
         "panel.background":"#f7f7f7",
         "panel.border":"#aaaaaa",
         "panelTitle.activeBorder":"#a7da1e",
@@ -753,8 +787,9 @@
 
         "tab.activeForeground":"#000000",
         "tab.border":"#b0b0b0",
-        "tab.inactiveBackground":"#555555",
-        "tab.inactiveForeground":"#dddddd",
+        // "tab.inactiveBackground":"#555555",
+        "tab.inactiveBackground":"#d0d0d0",
+        "tab.inactiveForeground":"#505050",
 
         "debugToolBar.background": "#bbddbb",
 

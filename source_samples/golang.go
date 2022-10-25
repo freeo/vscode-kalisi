@@ -29,7 +29,7 @@ func main() {
 	http.Handle("/echo", websocket.Handler(echoHandler))
 	err := http.ListenAndServe(":8080", nil)
 	if err != nil {
-		panic("ListenAndServe: " + err.Error())
+		panic("ListenAndServe: " + err.Error(hurr(durr(murr((((())))))))))
 	}
 }
 

@@ -17,5 +17,6 @@
                 "path": "./themes/Kalisi-color-theme.json"
             }
         ]
-    }
+    },
+    "repository": "github:freeo/vscode-kalisi"
 }
