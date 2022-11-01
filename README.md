@@ -1,11 +1,19 @@
 # vscode-kalisi
 
-Long-term usability & eye-care are the two design goals of this theme.
+<p align="center" style="background-color: #fafafa">
+    <img alt="Kalisi Logo" src="./icon-kalisi.png" height="128">
+</p>
 
-- Light theme to enforce proper brightness settings of your monitor
-- Pretty high contrast and saturation, but avoiding bright whites (#ffffff)
+A light theme for long-term usability & eye-care.
+
+- Pretty high contrast and medium saturation, but avoiding bright whites (most importantly the background: #fafafa)
+- Functional colors to catch attention where necessary, yet still pretty minimal (tried to avoid "color vomit")
 - Optimized for red light filter programs (tested that keywords can be distinguished at as low as 2300K)
-- Functional colors to catch attention where necessary, yet still pretty minimal
+- The red light optimization seems to work as well for deuteranopia (need more feedback on this)
+
+<!-- ![Kalisi Logo](./icon-kalisi.png) -->
+
+*Kalisi* is actually a family of themes - it's not the first one and definitely not the last: I port this to every tool that I use sooner or later. More releases depend on public interest.
 
 ## Buy me a beer
 

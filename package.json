@@ -1,10 +1,11 @@
 {
     "name": "vscode-kalisi",
     "displayName": "vscode-kalisi",
-    "description": "",
-    "version": "0.0.1",
+    "publisher": "freeo",
+    "description": "A light, eye-healthy theme for the long-term.",
+    "version": "0.1.0",
     "engines": {
-        "vscode": "^1.37.0"
+        "vscode": "^1.63.0"
     },
     "categories": [
         "Themes"
@@ -18,5 +19,10 @@
             }
         ]
     },
-    "repository": "github:freeo/vscode-kalisi"
+    "repository": "github:freeo/vscode-kalisi",
+    "icon": "images/icon-kalisi.png",
+    "galleryBanner": {
+        "color": "#a7da1e",
+        "theme": "light"
+    }
 }
