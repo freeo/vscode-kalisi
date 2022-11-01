@@ -82,3 +82,19 @@ https://code.visualstudio.com/api/references/theme-color
 Debugging explanation
 
 https://code.visualstudio.com/api/get-started/your-first-extension
+
+### Publishing steps
+
+**Microsoft Marketplace**
+
+Set version explicitly to create a version commit & tag
+```
+vsce publish 1.0.2
+```
+
+**open-vsx***
+
+Execute this after the step above! This will reuse the version without any changes to the repo.
+```
+npx ovsx publish -p $OPEN-VSX-TOKEN
+```
