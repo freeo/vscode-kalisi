@@ -14,6 +14,17 @@ A light theme for long-term usability & eye-care.
 <!-- ![Kalisi Logo](./icon-kalisi.png) -->
 
 *Kalisi* is actually a family of themes - it's not the first one and definitely not the last: I port this to every tool that I use sooner or later. More releases depend on public interest.
+## Installation
+
+Install from either VSCode Marketplace Extensions or open-vsx.org
+
+```
+vscode-kalisi
+```
+
+https://marketplace.visualstudio.com/items?itemName=freeo.vscode-kalisi
+
+https://open-vsx.org/extension/freeo/vscode-kalisi
 
 ## Buy me a beer
 
