@@ -1,28 +1,34 @@
 {
-    "name": "vscode-kalisi",
-    "displayName": "vscode-kalisi",
-    "publisher": "freeo",
-    "description": "A light, eye-healthy theme for the long-term.",
-    "version": "1.0.0",
-    "engines": {
-        "vscode": "^1.63.0"
-    },
-    "categories": [
-        "Themes"
-    ],
-    "contributes": {
-        "themes": [
-            {
-                "label": "Kalisi",
-                "uiTheme": "vs",
-                "path": "./themes/Kalisi-color-theme.json"
-            }
-        ]
-    },
-    "repository": "github:freeo/vscode-kalisi",
-    "icon": "icon-kalisi.png",
-    "galleryBanner": {
-        "color": "#a7da1e",
-        "theme": "light"
-    }
+	"name": "vscode-kalisi",
+	"displayName": "vscode-kalisi",
+	"publisher": "freeo",
+	"description": "A light, eye-healthy theme for the long-term.",
+	"version": "1.0.0",
+	"engines": {
+		"vscode": "^1.63.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Kalisi",
+				"uiTheme": "vs",
+				"path": "./themes/Kalisi-color-theme.json"
+			}
+		]
+	},
+	"repository": "github:freeo/vscode-kalisi",
+	"icon": "icon-kalisi.png",
+	"galleryBanner": {
+		"color": "#a7da1e",
+		"theme": "light"
+	},
+	"__metadata": {
+		"id": "56330fd2-3281-4726-a20a-a29a02b455f7",
+		"publisherDisplayName": "freeo",
+		"publisherId": "182e1c70-2b64-4283-8007-321406cd5839",
+		"isPreReleaseVersion": false
+	}
 }
